@@ -1,0 +1,54 @@
+.container{
+    flex-direction: column;
+}
+.zone{
+    width: 100%;
+}
+.zone section p{
+    font-size: 1.3em;
+}
+
+.zone section h2{
+    font-size: 1.6em;
+}
+/* PARTIE EXEMPLE */
+.responsiveImg img{
+    width: 100%;
+}
+
+/* FORMULAIRE */
+fieldset{
+    width: 70%;
+    height: 90%;
+}
+
+#name{
+    height: 30px;
+    width: 80%;
+}
+
+#mail{
+    height: 30px;
+    width: 80%;
+}
+
+#message{
+    width: 90%;
+    height: 100px;
+}
+
+#middle{
+   border: 0;
+   border-top: 5px dotted white;
+   border-bottom: 5px dotted white;
+}
+/* FOOTER */
+footer{
+    display: flex;
+    justify-content: center
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}

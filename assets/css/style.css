@@ -1,0 +1,205 @@
+
+html,body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+    background-color: #7D8CA3;
+}
+
+@media (orientation: portrait){
+    .fond{
+        background-image: url(../img/coworking-portrait.jpg);
+        background-size: cover;
+    }
+}
+
+@media (orientation: landscape){
+    .fond{
+        background-image: url(../img/coworking-paysage.jpg);
+        background-size: cover;
+    }
+}
+
+.fond{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fond h1{
+    color: #FFFFC7;
+    font-size: 50px;
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    background-color: #7D8CA3;
+
+}
+.container2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #7D8CA3;
+}
+.container3{
+    border-top: 2px solid black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7D8CA3;
+}
+
+
+
+@media (min-width:1024px){
+    .fond{
+        height: 50%;
+    }
+}
+
+@media (min-width:992px){
+    footer ul{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+/* ZONE sous image d'accueil */
+.zone{
+    text-align: center;
+    background-color: #36393B;
+    width: 33.33%;
+}
+#middle{
+    border-left: 5px dotted white;
+    border-right: 5px dotted white;
+}
+.zone section{
+    padding: 20px;
+}
+
+.zone section p{
+    font-size: 1.5em;
+    color: #FFFFC7;
+    padding: 10px;
+}
+
+.zone section h2{
+    font-size: 2em;
+    color: #FCAA67;
+}
+/* PArtie Exemple */
+.title{
+    text-align: center;
+    color: #FCAA67;
+}
+.responsiveImg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.responsiveImg h2{
+    color: #FCAA67;
+}
+.responsiveImg img{
+    width: 70%;
+}
+/* DEBUT FORMULAIRE */
+fieldset{
+    width: 50%;
+    margin: 50px 0;
+    background-color: #36393B;
+    box-shadow: 15px 15px 50px black;
+}
+
+legend{
+    font-size: 30px;
+    text-align: center;
+    color: #FCAA67;
+}
+
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form label{
+    font-size: 20px;
+    font-weight: bold;
+    color: #FCAA67;
+}
+
+form div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.messBox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.messLabel{
+    margin-top: 20px;
+}
+
+.mailBox{
+    margin-top: 20px;
+}
+
+#message{
+    width: 90%;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+#name{
+    height: 30px;
+    width: 60%;
+    min-width: 200px;
+}
+
+#mail{
+    height: 30px;
+    width: 60%;
+    min-width: 200px;
+}
+form button{
+    margin: 20px;
+    align-self: center;
+    width: 50%;
+    height: 100%;
+}
+
+/* FOOTER */
+footer{
+    height: 10%;
+    background-color: #36393B;
+    text-align: center;
+}
+footer ul{
+    list-style: none;
+    color: #FCAA67;
+    text-decoration: none;
+    padding: 0;
+}
+footer a{
+    text-decoration: none;
+    color: #FCAA67;
+}
+
+footer a:hover{
+    color: #FFFFC7;
+}
+
