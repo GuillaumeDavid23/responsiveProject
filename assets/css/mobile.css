@@ -13,9 +13,11 @@
 }
 /* PARTIE EXEMPLE */
 .responsiveImg img{
-    width: 100%;
+    width: 90%;
 }
-
+.title{
+    font-size: 1.2em;
+}
 /* FORMULAIRE */
 fieldset{
     width: 70%;
@@ -44,7 +46,7 @@ fieldset{
 }
 /* FOOTER */
 footer{
-    display: flex;
+    text-align: center;
     justify-content: center
 }
 

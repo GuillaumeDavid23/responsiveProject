@@ -7,20 +7,6 @@ html,body{
     background-color: #7D8CA3;
 }
 
-@media (orientation: portrait){
-    .fond{
-        background-image: url(../img/coworking-portrait.jpg);
-        background-size: cover;
-    }
-}
-
-@media (orientation: landscape){
-    .fond{
-        background-image: url(../img/coworking-paysage.jpg);
-        background-size: cover;
-    }
-}
-
 .fond{
     height: 100%;
     width: 100%;
@@ -46,6 +32,7 @@ html,body{
     display: flex;
     flex-direction: column;
     background-color: #7D8CA3;
+    margin-bottom: 50px;
 }
 .container3{
     border-top: 2px solid black;
@@ -58,18 +45,6 @@ html,body{
 
 
 
-@media (min-width:1024px){
-    .fond{
-        height: 50%;
-    }
-}
-
-@media (min-width:992px){
-    footer ul{
-        display: flex;
-        justify-content: space-around;
-    }
-}
 /* ZONE sous image d'accueil */
 .zone{
     text-align: center;
@@ -98,6 +73,7 @@ html,body{
 .title{
     text-align: center;
     color: #FCAA67;
+    font-size: 1.5em;
 }
 .responsiveImg{
     width: 100%;
@@ -109,6 +85,8 @@ html,body{
 }
 .responsiveImg img{
     width: 70%;
+    border-radius: 20px;
+    box-shadow: 15px 15px 30px #36393B;
 }
 /* DEBUT FORMULAIRE */
 fieldset{
@@ -162,33 +140,56 @@ form div{
     width: 90%;
     height: 100px;
     margin-bottom: 20px;
+    resize: none;
+    border-radius: 10px;
+}
+#message:focus{
+    box-shadow: 5px 5px 10px #FFFFC7;
 }
 
 #name{
     height: 30px;
     width: 60%;
     min-width: 200px;
+    border-radius: 10px;
+}
+#name:focus{
+    box-shadow: 5px 5px 10px #FFFFC7;
 }
 
 #mail{
     height: 30px;
     width: 60%;
     min-width: 200px;
+    border-radius: 10px;
+}
+
+#mail:focus{
+    box-shadow: 5px 5px 10px #FFFFC7;
 }
 form button{
     margin: 20px;
     align-self: center;
     width: 50%;
     height: 100%;
+    border-radius: 10px;
+    background-color: #FFFFC7;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.3em;
+    font-weight: bold;
 }
 
 /* FOOTER */
 footer{
-    height: 10%;
+    height: 100px;
+    width: 100%;
     background-color: #36393B;
-    text-align: center;
+    display: flex;
+    align-items: center;
+
 }
 footer ul{
+    width: 100%;
     list-style: none;
     color: #FCAA67;
     text-decoration: none;
@@ -203,3 +204,30 @@ footer a:hover{
     color: #FFFFC7;
 }
 
+/* Responsive */
+@media (orientation: portrait){
+    .fond{
+        background-image: url(../img/coworking-portrait.jpg);
+        background-size: cover;
+    }
+}
+
+@media (orientation: landscape){
+    .fond{
+        background-image: url(../img/coworking-paysage.jpg);
+        background-size: cover;
+    }
+}
+
+@media (min-width:1024px){
+    .fond{
+        height: 50%;
+    }
+}
+
+@media (min-width:992px){
+    footer ul{
+        display: flex;
+        justify-content: space-around;
+    }
+}
